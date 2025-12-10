@@ -1,0 +1,5 @@
+{
+  "name": "PharmaStock AI",
+  "description": "Sistema inteligente de gestão de compras farmacêuticas baseado no modelo Dente de Serra (Sawtooth), utilizando IA para processamento de arquivos de vendas e estoque.",
+  "requestFramePermissions": []
+}
