@@ -2,10 +2,12 @@ import { GoogleGenAI, Type } from "@google/genai";
 import { Transaction } from '../types';
 
 const getAiClient = () => {
-  const apiKey = process.env.API_KEY;
+  const apiKey = import.meta.env.VITE_API_KEY as string;
+
   if (!apiKey) {
-    throw new Error("API Key is missing. Please set process.env.API_KEY");
+    throw new Error("API Key is missing. Please set VITE_API_KEY");
   }
+
   return new GoogleGenAI({ apiKey });
 };
 
