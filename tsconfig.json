@@ -10,11 +10,12 @@
     "strict": false,
     "forceConsistentCasingInFileNames": true,
     "module": "ESNext",
-    "moduleResolution": "Node",
+    "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "types": ["vite/client", "node"]
   },
-  "include": ["vite-env.d.ts", "**/*.ts", "**/*.tsx"]
+  "include": ["vite-env.d.ts", "src/**/*", "App.tsx", "vite.config.ts"]
 }
